@@ -1,0 +1,120 @@
+html {
+
+  background-image: url("https://imgur.com/gallery/FdHVNT9");
+  
+}
+
+body {
+  /* background-color: rgba(300, 156, 156,.7); */
+  text-align: center;
+  width: 1000px;
+  padding: 10px;
+  border-radius: 10%;
+  margin: auto;
+}
+li {
+  height: 30px; 
+  width: 100px; 
+  margin: 0px; 
+  padding: 0px; 
+  border-radius: 0%;
+  border-width: 3px;
+  border-color: black;
+  background-color: white;  
+}
+li:hover {
+  color: black;
+}
+
+.text-body{
+  display:block;
+  align-items: center;
+  background-color:white; 
+  height: 100px; 
+  width: 500px; 
+  margin: 15px; 
+  padding: 10px; 
+  border-radius: 5%; 
+  box-shadow: black 0px 0px 20px; 
+}
+#topic-container h2{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  display:block;
+  width:500px;
+  font-size: 40px;
+  color:rgb(206, 159, 97);
+  background-color: white;
+  
+}
+ul {
+  display:flex;
+  justify-content: center;
+  padding:0px;
+  list-style-type: none;
+}
+img {
+  display: inline-block;
+  object-fit: cover;
+  opacity: 80%;
+  width: 1000px;
+  height: 200px;
+}
+ .scores-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* .scores-container {
+  flex-direction: row;
+} */
+h1{
+text-shadow: 2px 3px black;
+
+}
+header {
+  line-height: 0;
+  margin-bottom: 10px;
+  font-size: 4em;
+  color: rgb(219, 193, 159);
+}
+.timer, .errors, .accuracy, 
+.words, .wpm { 
+  background-color:white; 
+  height: 30px; 
+  width: 60px; 
+  margin: 15px; 
+  padding: 10px; 
+  border-radius: 10%; 
+  box-shadow: black 0px 0px 20px; 
+} 
+.input-area{
+
+  background-color:white; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15px; 
+  padding: 10px; 
+  border-radius: 5%; 
+  box-shadow: black 0px 0px 20px;
+  font-size: 50;
+}
+#sign-in{
+  position: relative;
+}
+#sign-in-form {
+  display: flex;
+  position: absolute;
+  bottom: 90px;
+  right: 250px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.correct-word{
+color: green;
+}
+.incorrect-word{
+  color: red;
+}

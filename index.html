@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Type</title>
+  <script defer src='./app.js' ></script>
+  <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1>Tip Type</h1>
+    <img src="https://i.imgur.com/FdHVNT9.gif" width="320" height="240" loading="lazy" style="">
+  </header>
+  <section id='sign-in'>
+    <form id='sign-in-form'>
+      <input type = "text" id='username' placeholder = 'username'></input>
+      <input type = "password" id='password' placeholder = 'password'></input>
+      <input type = "submit" id='submid-button' ></input>
+  </section>
+  <section class = 'container' id='topic-container'>
+    <h2>Choose a Topic</h2>
+    <ul id='topic-list'>
+      <li><a href='#' onclick = "fillWords('rap')">Rap Lyrics</a></li>
+      <li><a href='#' onclick = "fillWords('erotica')">Erotic Fiction</a></li>
+      <li><a href='#' onclick = "fillWords('quick_quote')">Nihlism</a></li>
+      <li><a href='#' onclick = "fillWords('disney')" >Disney Songs</a></li>
+    </ul>
+  </section>
+  <section class = 'container' id='game-container'>
+    <div class="scores-container">
+      <div class="words">
+        <div class = 'header-text'>Words</div>
+        <div class = "currrent-words">0</div>
+      </div>
+      <div class="timer">
+        <div class = 'header-text'>Timer</div>
+        <div class = "currrent-time">0</div>
+      </div>
+      <div class="errors">
+        <div class = 'header-text'>Errors</div>
+        <div class = "currrent-errors">100</div>
+      </div>
+      <div class="accuracy">
+        <div class = 'header-text'>Accuracy</div>
+        <div class = "currrent-accuracy">100</div>
+      </div>
+    </div>
+    <div class="text-body">
+   
+    </div>    
+    <textarea class="input-area"
+    placeholder = "start typing here ..."
+    oninput = "processCurrentText() "
+    autocomplete="off"
+    autocorrect="off"
+    autocaptalize="off"
+    spellcheck="false"> 
+    
+  </textarea>
+  </section>
+  <section id='leaderboard'>
+    <h3 id='leaderboard-title'>Leaderboard</h3>
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Score[wpm]</th>
+      </tr>
+      <tr>
+      </tr>
+      <td>HIGGZMADETHEBEAT</td>
+      <td>9000</td>
+      <tr>
+
+        <td>HumbleGAWWD</td>
+        <td>45</td>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
